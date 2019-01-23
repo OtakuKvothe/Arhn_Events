@@ -2,7 +2,10 @@
   font-family: WorkSansRegular;
   src: url("../fonts/WorkSans-Regular.otf");
 }
-
+@font-face {
+  font-family: WorkSansBold;
+  src: url("../fonts/WorkSans-Bold.otf");
+}
 body{
     scrollbar-width: none;
     font-family: WorkSansRegular;
@@ -300,7 +303,6 @@ html.fp-enabled,
     text-align: center;
     justify-content: center;
     padding-bottom: 7vh;
-    font-family: WorkSansRegular;
 }
 
 .title{
@@ -312,12 +314,14 @@ html.fp-enabled,
     align-items: center;
     font-size: 7vh;
     animation: .7s ease-out 0s 1 slideInFromLeft;
+    font-family: WorkSansBold;
 }
 
 .descr{
     font-size: 3vh;
     line-height: 3.7vh;
     animation: .7s ease-out 0s 1 slideInFromLeft;
+    font-family: WorkSansRegular;
 }
 
 .topbar{
