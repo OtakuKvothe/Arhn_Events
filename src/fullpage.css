@@ -284,6 +284,8 @@ html.fp-enabled,
     height: 90vh;
     width: 25vw;  
     animation: .7s ease-out 0s 1 slideInFromLeft; 
+    justify-content: center;
+    align-items: center;
 }
 
 .bio{
@@ -294,6 +296,8 @@ html.fp-enabled,
 }
 
 .title{
+    padding-bottom: 5vh;
+    line-height: 7.5vh;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -324,6 +328,14 @@ html.fp-enabled,
         border-color: white;
 }
 
+.p0h{
+    margin-top: 20vh;
+}
+
+.sp{
+    margin-left: 5vw;
+}
+
 @media only screen and (max-width: 1024px){
 
     .container{
@@ -331,6 +343,14 @@ html.fp-enabled,
         height: 90vh;
         margin-top: 5vh;
         margin-bottom: 5vh;
+    }
+
+    .p0h{
+        margin-top: 7vh;
+    }
+
+    .sp{
+        margin-left: 0vw;
     }
 
     .holder{
@@ -355,7 +375,7 @@ html.fp-enabled,
     }
     .title{
         font-size: 5vh;
-        margin-bottom: 1vh;
+        padding-bottom: 2vh;
         margin-top: 1vh;
     }
     .descr{
