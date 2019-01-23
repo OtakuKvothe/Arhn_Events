@@ -1,5 +1,11 @@
+@font-face {
+  font-family: WorkSansRegular;
+  src: url("../fonts/WorkSans-Regular.otf");
+}
+
 body{
     scrollbar-width: none;
+    font-family: WorkSansRegular;
 }
 html.fp-enabled,
 .fp-enabled body {
@@ -294,10 +300,11 @@ html.fp-enabled,
     text-align: center;
     justify-content: center;
     padding-bottom: 7vh;
-
+    font-family: WorkSansRegular;
 }
 
 .title{
+    font-weight: bold;
     padding-bottom: 5vh;
     line-height: 7.5vh;
     text-align: center;
