@@ -65,14 +65,19 @@ html.fp-enabled,
 }
 .fp-controlArrow.fp-prev {
     left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url("../imgs/prev.png") no-repeat;
+    cursor: pointer;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url("../imgs/next.png") no-repeat;
+    cursor: pointer;
 }
 .fp-scrollable {
     overflow: hidden;
@@ -241,6 +246,17 @@ html.fp-enabled,
 
 
 /*Changes for Aarohan*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .container{
     width: 100%;
     height: auto;
@@ -266,7 +282,8 @@ html.fp-enabled,
 
 .poster{
     height: 90vh;
-    width: 25vw;   
+    width: 25vw;  
+    animation: .7s ease-out 0s 1 slideInFromLeft; 
 }
 
 .bio{
@@ -281,10 +298,12 @@ html.fp-enabled,
     justify-content: center;
     align-items: center;
     font-size: 7vh;
+    animation: .7s ease-out 0s 1 slideInFromLeft;
 }
 
 .descr{
     font-size: 3vh;
+    animation: .7s ease-out 0s 1 slideInFromLeft;
 }
 
 .topbar{
@@ -294,6 +313,15 @@ html.fp-enabled,
     width: 100vw;
     top: 0;
     position: absolute;
+    display: inline!important;
+}
+#backbutton{
+    right: 0;
+    float: right;
+    margin-top: 2vh;
+    margin-right: 3vw;
+    background-color: transparent;
+        border-color: white;
 }
 
 @media only screen and (max-width: 1024px){
@@ -339,4 +367,10 @@ html.fp-enabled,
     #icon{
         height: 7vh;
     }
+    #backbutton{
+
+    font-size: 2vh;
+    height: 6vh!important;
+    width: 15vw!important;
+}
 }

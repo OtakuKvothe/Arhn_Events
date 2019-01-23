@@ -9,7 +9,7 @@
 	<meta name="keywords"  content="Aarohan" />
 	<meta name="Resource-type" content="Document" />
 
-
+	<link rel="stylesheet" type="text/css" href="vendors/jquery.fullpage.css">
 	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<style>
@@ -90,8 +90,13 @@
 
 <div class="topbar">
 	<img id="icon" src="imgs/aarohan.icon.png">
+	<button onclick="goBack()" class="btn btn-secondary" id="backbutton">Back</button>
 </div>
-
+<script type="text/javascript">
+	function goBack() {
+  window.history.back();
+}
+</script>
 <script type="text/javascript" src="src/fullpage.js"></script>
 <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 <script type="text/javascript">
