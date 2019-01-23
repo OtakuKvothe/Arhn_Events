@@ -293,6 +293,8 @@ html.fp-enabled,
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding-bottom: 7vh;
+
 }
 
 .title{
@@ -307,6 +309,7 @@ html.fp-enabled,
 
 .descr{
     font-size: 3vh;
+    line-height: 3.7vh;
     animation: .7s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -335,6 +338,10 @@ html.fp-enabled,
 .sp{
     margin-left: 5vw;
 }
+#icon{
+        margin-top: 3vh;
+        margin-left: 1vw;
+    }
 
 @media only screen and (max-width: 1024px){
 
@@ -372,6 +379,7 @@ html.fp-enabled,
 
     .bio{
         width: 100vw;
+        padding-bottom: 0;
     }
     .title{
         font-size: 5vh;
