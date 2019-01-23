@@ -67,7 +67,7 @@
 <div id="fullpage">
 	<div class="section fp-auto-height-responsive" id="event_name">
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(255, 71, 26);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -86,7 +86,7 @@
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(172, 0, 230);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -107,7 +107,7 @@ Start from scratch and strive for success. Trust your observation abilities and 
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: orange;">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -126,7 +126,7 @@ Start from scratch and strive for success. Trust your observation abilities and 
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(179, 179, 0);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -166,7 +166,13 @@ Start from scratch and strive for success. Trust your observation abilities and 
         scrollBar: false,
         autoScrolling: true,
         css3: true,
-        slidesNavigation: true
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
     });
 </script>
 </body>

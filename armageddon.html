@@ -67,7 +67,7 @@
 <div id="fullpage">
 	<div class="section fp-auto-height-responsive" id="event_name">
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: purple;">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -89,7 +89,7 @@ may win! In the manual events, gears, motors and switches must come together to 
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(92, 214, 92);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -112,7 +112,7 @@ may win! In the manual events, gears, motors and switches must come together to 
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(172, 0, 230);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -134,7 +134,7 @@ game as long as it is sufficient to guarantee you victory. So, bring out your cu
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(255, 71, 26);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -175,7 +175,13 @@ game as long as it is sufficient to guarantee you victory. So, bring out your cu
         scrollBar: false,
         autoScrolling: true,
         css3: true,
-        slidesNavigation: true
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
     });
 </script>
 </body>

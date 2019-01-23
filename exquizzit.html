@@ -67,7 +67,7 @@
 <div id="fullpage">
 	<div class="section fp-auto-height-responsive" id="event_name">
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(26, 117, 255);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -106,7 +106,13 @@
         scrollBar: false,
         autoScrolling: true,
         css3: true,
-        slidesNavigation: true
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 25,
+  normalScrollElementTouchThreshold: 3
     });
 </script>
 </body>
