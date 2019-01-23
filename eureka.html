@@ -8,7 +8,7 @@
 	<meta name="description" content="Aarohan Events" />
 	<meta name="keywords"  content="Aarohan" />
 	<meta name="Resource-type" content="Document" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 	<link rel="stylesheet" type="text/css" href="src/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -67,7 +67,7 @@
 <div id="fullpage">
 	<div class="section fp-auto-height-responsive" id="event_name">
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(26, 117, 255);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive" id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -86,7 +86,7 @@
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(255, 71, 26);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive" id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(172, 0, 230);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive" id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -126,7 +126,7 @@ With an aim to encourage creative and innovative marketing skills, Selldom welco
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: purple;">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive" id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -145,7 +145,7 @@ With an aim to encourage creative and innovative marketing skills, Selldom welco
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: orange;">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive" id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -166,7 +166,7 @@ Pull up your socks, gear up to appraise your strategies and find out!
 			</div>
 		</div>
 		<div class="slide fp-auto-height-responsive" id="slide2" style="background-color: rgb(92, 214, 92);">
-			<div class="holder container fp-auto-height-responsive">
+			<div class="holder container fp-auto-height-responsive"  id="scrollbar-section">
 				<div class="row">
 					<div class="col poster-holder">
 						<div class="poster">
@@ -208,7 +208,13 @@ The event has an association with the largest professional services network, Del
         scrollBar: false,
         autoScrolling: true,
         css3: true,
-        slidesNavigation: true
+        slidesNavigation: true,
+        normalScrollElements: '#scrollbar-section',
+  //scrollOverflowOptions: {
+    //scrollbars: 'custom'
+  //},
+  touchSensitivity: 15,
+  normalScrollElementTouchThreshold: 3
     });
 </script>
 </body>
