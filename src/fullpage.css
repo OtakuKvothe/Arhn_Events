@@ -354,6 +354,18 @@ html.fp-enabled,
         margin-left: 1vw;
     }
 
+.dl_link{
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.dl_link:hover{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
 @media only screen and (max-width: 1024px){
 
     .container{
