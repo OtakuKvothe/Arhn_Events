@@ -341,11 +341,18 @@ html.fp-enabled,
     background-color: transparent;
     border-color: white;
 }
+.dl-btn{
+    background-color: transparent!important;
+    border-color: white!important;
+}
 
 .p0h{
     margin-top: 20vh;
 }
-
+.pcrnr{
+    margin-top: 10vh;
+    margin-left: -2vh;
+}
 .sp{
     margin-left: 5vw;
 }
@@ -423,5 +430,15 @@ html.fp-enabled,
     font-size: 2vh;
     height: 6vh!important;
     width: 15vw!important;
+}
+.pcrnr{
+    margin-left: 0;
+}
+.dl-btn{
+    width: 70vw;
+    height: 5vh;
+}
+.dl_link{
+    font-size: 3vh;
 }
 }
